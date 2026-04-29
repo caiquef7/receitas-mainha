@@ -585,7 +585,7 @@ function askIA(){
   .then(function(d){
     var txt='';
     if(d.content) d.content.forEach(function(b){if(b.type==='text')txt+=b.text;});
-    if(!txt) txt='Nao consegui gerar sugestoes. Tente com outros ingredientes!';
+   if(!txt) txt = 'Erro da Anthropic: ' + JSON.stringify(d);
     document.getElementById('ia-txt').innerHTML=txt.replace(/\n/g,'<br>');
     document.getElementById('ia-res').style.display='block';
   })
