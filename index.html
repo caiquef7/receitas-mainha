@@ -569,11 +569,12 @@ function askIA(){
   var btn=document.querySelector('#panel-ia .btn-r');
   btn.textContent='Consultando...';btn.disabled=true;
   document.getElementById('ia-res').style.display='none';
+
   fetch('/api/claude',{
     method:'POST',
-    headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},
+    headers:{'Content-Type':'application/json'},
     body:JSON.stringify({
-      model:'claude-3-5-haiku-20241022',
+      model:'claude-3-haiku-20240307',
       max_tokens:800,
       messages:[{role:'user',content:'Voce e a Mainha, especialista em receitas fit para bebes e familias. Com os ingredientes: '+inp+' sugira 2 receitas saudaveis. Para cada uma: nome, ingredientes e 3 passos de preparo. Seja carinhosa, use emojis. Responda em portugues.'}]
     })
@@ -585,12 +586,12 @@ function askIA(){
   .then(function(d){
     var txt='';
     if(d.content) d.content.forEach(function(b){if(b.type==='text')txt+=b.text;});
-   if(!txt) txt = 'Erro da Anthropic: ' + JSON.stringify(d);
+    if(!txt) txt='Erro da Anthropic: ' + JSON.stringify(d);
     document.getElementById('ia-txt').innerHTML=txt.replace(/\n/g,'<br>');
     document.getElementById('ia-res').style.display='block';
   })
   .catch(function(e){
-    document.getElementById('ia-txt').innerHTML='<b>Funcionalidade IA</b><br>Esta funcao funciona apenas dentro do Claude.ai.<br>Para usar, abra o app pelo link compartilhado no Claude.';
+    document.getElementById('ia-txt').innerHTML='<b>Erro de Conexão</b><br>Verifique se o Vercel terminou o deploy ou se a API Key está correta. Detalhe: ' + e.message;
     document.getElementById('ia-res').style.display='block';
   })
   .finally(function(){
