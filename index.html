@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mini Maromba">
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+<title>Receitas de Mainha</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:'Nunito',sans-serif;background:#f0eded;color:#1c1c1c}
+:root{--red:#8B1A1A;--gold:#C9A235;--gold2:#E8C55A;--cream:#F5ECE2;--green:#2D6A2D;--white:#fff;--card:#FFF8F0;--tm:#555;--tl:#888;--bd:rgba(0,0,0,0.08)}
+
+/* HEADER */
+.hdr{background:var(--red);padding:14px 16px 0;position:sticky;top:0;z-index:100}
+.hdr-top{display:flex;align-items:center;gap:12px;padding-bottom:10px}
+.hdr-logo{width:56px;height:56px;border-radius:50%;border:2.5px solid var(--gold);overflow:hidden;flex-shrink:0;box-shadow:0 0 0 3px rgba(201,162,53,0.2)}
+.hdr-logo img{width:100%;height:100%;object-fit:cover}
+.hdr-text h1{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:#fff;line-height:1.1}
+.hdr-text p{font-size:0.73rem;color:rgba(255,255,255,0.75);margin-top:1px}
+.hdr-text p strong{color:var(--gold2)}
+.age-bar{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.age-bar::-webkit-scrollbar{display:none}
+.ap{flex-shrink:0;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:4px 12px;font-size:0.7rem;font-weight:800;color:rgba(255,255,255,0.85);cursor:pointer;white-space:nowrap}
+.ap.on{background:var(--gold);border-color:var(--gold);color:#5a0f1b}
+.srch-wrap{padding:0 0 10px}
+.srch{background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);border-radius:30px;display:flex;align-items:center;gap:8px;padding:8px 14px}
+.srch input{background:none;border:none;outline:none;color:#fff;font-size:0.85rem;font-family:'Nunito',sans-serif;width:100%;font-weight:600}
+.srch input::placeholder{color:rgba(255,255,255,0.6)}
+
+/* TABS */
+.tabs{display:flex;background:#fff;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:99}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 2px 7px;cursor:pointer;position:relative}
+.tab .ti{font-size:1.1rem;line-height:1}
+.tab .tl{font-size:0.58rem;font-weight:700;color:var(--tl)}
+.tab.on .tl{color:var(--red)}
+.tab::after{content:'';position:absolute;bottom:0;left:15%;right:15%;height:2.5px;background:var(--red);border-radius:2px;opacity:0}
+.tab.on::after{opacity:1}
+
+/* PANELS */
+.panel{display:none;padding:14px 14px 60px;background:#fff;min-height:50vh}
+.panel.on{display:block}
+
+/* FILTER CHIPS */
+.frow{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;scrollbar-width:none}
+.frow::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;border:1.5px solid var(--bd);background:#fff;border-radius:20px;padding:5px 12px;font-size:0.75rem;font-weight:700;color:var(--tm);cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--red);border-color:var(--red);color:#fff}
+.cnt{font-size:0.75rem;color:var(--tl);font-weight:600;margin-bottom:10px}
+
+/* RECIPE CARD */
+.rc{background:var(--card);border:1px solid rgba(201,162,53,0.2);border-radius:14px;padding:13px 14px;margin-bottom:9px;cursor:pointer;position:relative;overflow:hidden}
+.rc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold);border-radius:4px 0 0 4px}
+.rtag{font-size:0.62rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.rname{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#1c1c1c;margin-bottom:5px;padding-right:36px;line-height:1.3}
+.rmeta{display:flex;align-items:center;gap:8px;font-size:0.7rem;color:var(--tl);font-weight:600;flex-wrap:wrap}
+.abadge{background:#6B3FA0;color:#fff;font-size:0.6rem;font-weight:800;padding:2px 7px;border-radius:10px}
+.rfav{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:1.2rem;cursor:pointer;line-height:1}
+
+/* DETAIL */
+.det{display:none;position:fixed;inset:0;background:#fff;z-index:200;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.det.on{display:block}
+.det-hdr{background:var(--red);padding:16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10}
+.det-back{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;color:#fff;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.det-hdr h2{font-family:'Playfair Display',serif;font-size:1rem;color:#fff;flex:1;line-height:1.2}
+.det-fav{font-size:1.4rem;cursor:pointer;flex-shrink:0}
+.det-body{padding:16px}
+.det-cat{font-size:0.65rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.det-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:var(--red);margin-bottom:6px;line-height:1.2}
+.det-age{display:inline-block;background:#6B3FA0;color:#fff;font-size:0.68rem;font-weight:800;padding:3px 10px;border-radius:12px;margin-bottom:14px}
+.sec h4{font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--red);margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid rgba(201,162,53,0.25);margin-top:0}
+.sec{margin-bottom:16px}
+.ing-item{display:flex;align-items:flex-start;gap:7px;padding:5px 0;font-size:0.82rem;color:var(--tm);line-height:1.4;border-bottom:1px solid #f5f5f5}
+.idot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:6px}
+.iadd{margin-left:auto;background:var(--green);color:#fff;border:none;border-radius:8px;padding:3px 9px;font-size:0.65rem;font-weight:800;cursor:pointer;flex-shrink:0;font-family:'Nunito',sans-serif}
+.prep{font-size:0.85rem;color:var(--tm);line-height:1.7}
+.add-all{width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:13px;font-size:0.85rem;font-weight:800;font-family:'Nunito',sans-serif;cursor:pointer;margin-top:4px}
+
+/* IA */
+.ia-ban{background:linear-gradient(135deg,var(--red),#6B1414);border-radius:16px;padding:18px;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.ia-logo{width:48px;height:48px;border-radius:50%;border:2px solid rgba(201,162,53,0.5);overflow:hidden;flex-shrink:0}
+.ia-logo img{width:100%;height:100%;object-fit:cover}
+.ia-ban h3{font-family:'Playfair Display',serif;font-size:1.05rem;color:#fff;margin-bottom:3px}
+.ia-ban p{font-size:0.75rem;color:rgba(255,255,255,0.8);line-height:1.4}
+textarea{width:100%;border:1.5px solid var(--bd);border-radius:14px;padding:12px;font-size:0.85rem;font-family:'Nunito',sans-serif;color:#1c1c1c;resize:none;min-height:90px;outline:none;margin-bottom:10px;background:#fff}
+textarea:focus{border-color:var(--red)}
+.btn-r{width:100%;background:var(--red);color:#fff;border:none;border-radius:14px;padding:14px;font-size:0.9rem;font-family:'Nunito',sans-serif;font-weight:800;cursor:pointer}
+#ia-res{margin-top:14px;background:var(--card);border:1px solid rgba(201,162,53,0.2);border-radius:14px;padding:14px;display:none}
+#ia-res h4{font-family:'Playfair Display',serif;color:var(--red);margin-bottom:6px}
+#ia-res p{font-size:0.8rem;line-height:1.6;color:var(--tm)}
+
+/* COMPRAS */
+.cban{background:linear-gradient(135deg,var(--green),#3A8A3A);border-radius:16px;padding:18px;margin-bottom:14px}
+.cban h3{font-family:'Playfair Display',serif;font-size:1.05rem;color:#fff;margin-bottom:3px}
+.cban p{font-size:0.78rem;color:rgba(255,255,255,0.8)}
+.add-row{display:flex;gap:8px;margin-bottom:14px}
+.add-inp{flex:1;border:1.5px solid #ccc;border-radius:12px;padding:11px 13px;font-size:0.85rem;font-family:'Nunito',sans-serif;outline:none;background:#fff;color:#1c1c1c}
+.add-inp:focus{border-color:var(--green)}
+.btn-add{width:44px;height:44px;background:var(--green);color:#fff;border:none;border-radius:12px;font-size:1.5rem;cursor:pointer;flex-shrink:0;font-family:'Nunito',sans-serif}
+.stitle{font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#fff;background:var(--red);padding:5px 10px;border-radius:8px;margin:12px 0 6px;display:block}
+.si{display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid #eee;background:#fff}
+.schk{width:22px;height:22px;border-radius:6px;border:2px solid #ccc;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;font-size:0.8rem}
+.schk.on{background:var(--green);border-color:var(--green);color:#fff}
+.slbl{flex:1;font-size:0.82rem;font-weight:600;color:#1c1c1c}
+.slbl.on{text-decoration:line-through;color:var(--tl)}
+.sdel{color:var(--tl);cursor:pointer;font-size:1rem;padding:4px}
+.clr-btn{background:#fff;border:1px solid var(--red);color:var(--red);border-radius:10px;padding:6px 14px;font-size:0.75rem;font-weight:700;cursor:pointer;margin-bottom:12px;font-family:'Nunito',sans-serif}
+
+/* EMPTY & FAV */
+.empty{text-align:center;padding:40px 16px;color:var(--tl)}
+.empty-ico{font-size:3rem;margin-bottom:10px;opacity:0.4;display:block}
+.empty h4{font-size:0.9rem;font-weight:700;margin-bottom:5px;color:var(--tm)}
+.empty p{font-size:0.75rem;line-height:1.5}
+.fav-empty{text-align:center;padding:50px 20px}
+.fav-empty-logo{width:70px;height:70px;border-radius:50%;overflow:hidden;margin:0 auto 14px;opacity:0.3;border:2px solid var(--bd)}
+.fav-empty-logo img{width:100%;height:100%;object-fit:cover}
+.fav-empty h4{font-size:0.95rem;font-weight:700;color:var(--tm);margin-bottom:5px}
+.fav-empty p{font-size:0.75rem;color:var(--tl);line-height:1.5}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#1c1c1c;color:#fff;padding:10px 20px;border-radius:20px;font-size:0.8rem;font-weight:700;opacity:0;transition:all 0.3s;z-index:999;white-space:nowrap;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="hdr" id="hdr">
+  <div class="hdr-top">
+    <div class="hdr-logo"><img src="data:image/jpeg;base64,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" alt="Logo"></div>
+    <div class="hdr-text">
+      <h1>Receitas de Mainha</h1>
+      <p>para o Mini Maromba &#128170; &middot; <strong>155 receitas</strong></p>
+    </div>
+  </div>
+  <div class="age-bar" id="age-bar">
+    <div class="ap on" onclick="setAge(this,'todas')">Todas idades</div>
+    <div class="ap" onclick="setAge(this,'6m')">6+ meses</div>
+    <div class="ap" onclick="setAge(this,'8m')">8+ meses</div>
+    <div class="ap" onclick="setAge(this,'10m')">10+ meses</div>
+    <div class="ap" onclick="setAge(this,'12m')">1+ ano</div>
+    <div class="ap" onclick="setAge(this,'alerg')">&#127807; Alergicos</div>
+  </div>
+  <div class="srch-wrap" id="srch-wrap">
+    <div class="srch">
+      <span>&#128269;</span>
+      <input type="text" id="srch-inp" placeholder="Buscar receitas ou ingredientes..." oninput="render()">
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab on" onclick="goTab('rec',this)"><div class="ti">&#127859;</div><div class="tl">Receitas</div></div>
+  <div class="tab" onclick="goTab('ia',this)"><div class="ti">&#129302;</div><div class="tl">IA</div></div>
+  <div class="tab" onclick="goTab('cmp',this)"><div class="ti">&#128722;</div><div class="tl">Compras</div></div>
+  <div class="tab" onclick="goTab('fav',this)"><div class="ti">&#10084;&#65039;</div><div class="tl">Favoritos</div></div>
+</div>
+
+<!-- RECEITAS -->
+<div class="panel on" id="panel-rec">
+  <div class="frow">
+    <div class="chip on" onclick="setCat(this,'Todas')">&#10024; Todas</div>
+    <div class="chip" onclick="setCat(this,'Comidas')">&#127859; Comidas</div>
+    <div class="chip" onclick="setCat(this,'Papinhas')">&#129379; Papinhas</div>
+    <div class="chip" onclick="setCat(this,'Paes')">&#127838; Paes</div>
+    <div class="chip" onclick="setCat(this,'Bolos')">&#127874; Bolos</div>
+    <div class="chip" onclick="setCat(this,'Muffins')">&#129473; Muffins</div>
+    <div class="chip" onclick="setCat(this,'Panquecas')">&#129348; Panquecas</div>
+    <div class="chip" onclick="setCat(this,'Salgados')">&#129393; Salgados</div>
+    <div class="chip" onclick="setCat(this,'Cookies')">&#127850; Cookies</div>
+    <div class="chip" onclick="setCat(this,'Geleias')">&#127827; Geleias</div>
+    <div class="chip" onclick="setCat(this,'Doces')">&#127790; Doces</div>
+    <div class="chip" onclick="setCat(this,'Mingaus')">&#129371; Mingaus</div>
+    <div class="chip" onclick="setCat(this,'Alergicos')">&#127807; Alergicos</div>
+    <div class="chip" onclick="setCat(this,'Bases')">&#129514; Bases</div>
+  </div>
+  <div class="cnt" id="cnt">155 receitas</div>
+  <div id="list"></div>
+</div>
+
+<!-- IA -->
+<div class="panel" id="panel-ia">
+  <div class="ia-ban">
+    <div class="ia-logo"><img src="data:image/jpeg;base64,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" alt="Mainha"></div>
+    <div><h3>Mainha Inteligente</h3><p>Diga o que tem na geladeira e sugiro a receita perfeita!</p></div>
+  </div>
+  <textarea id="ia-inp" placeholder="Ex: frango, batata doce, cenoura, aveia, banana..."></textarea>
+  <button class="btn-r" onclick="askIA()">✨ Sugerir receitas</button>
+  <div id="ia-res"><h4>&#127775; Sugestao da Mainha</h4><p id="ia-txt"></p></div>
+</div>
+
+<!-- COMPRAS -->
+<div class="panel" id="panel-cmp">
+  <div class="cban"><h3>&#128722; Lista de Compras</h3><p id="cmp-cnt">0/0 itens marcados</p></div>
+  <div class="add-row">
+    <input class="add-inp" id="add-inp" placeholder="Adicionar item..." onkeydown="if(event.key==='Enter')addItem()">
+    <button class="btn-add" onclick="addItem()">+</button>
+  </div>
+  <div id="shop-list"></div>
+</div>
+
+<!-- FAVORITOS -->
+<div class="panel" id="panel-fav">
+  <div class="cnt" id="fav-cnt">0 receitas favoritas</div>
+  <div id="fav-list"></div>
+</div>
+
+<!-- DETALHE -->
+<div class="det" id="det">
+  <div class="det-hdr">
+    <button class="det-back" onclick="closeDet()">&#8592;</button>
+    <h2 id="det-htitle"></h2>
+    <span class="det-fav" id="det-fav" onclick="toggleFavDet()"></span>
+  </div>
+  <div class="det-body">
+    <div class="det-cat" id="det-cat"></div>
+    <div class="det-title" id="det-title"></div>
+    <div class="det-age" id="det-age"></div>
+    <div class="sec"><h4>Ingredientes</h4><div id="det-ing"></div>
+      <button class="add-all" onclick="addAll()">&#128722; Adicionar todos a lista de compras</button>
+    </div>
+    <div class="sec"><h4>Modo de Preparo</h4><div class="prep" id="det-prep"></div></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const recipes = [
+  // COMIDAS MAROMBA
+  {id:1,cat:"Comidas",name:"Strogonoff De Frango",ing:["1 porção de frango picadinho (~150g)","1 batata média cozida","1/2 cenoura cozida","1/2 xícara da água do cozimento dos legumes","1 tomate pequeno picado (sem sementes)","Alho e azeite a gosto","Temperos naturais (páprica doce, cúrcuma)","Cebolinha para finalizar","Sal: opcional - Bebê 1+"],prep:"Refogue o alho no azeite até dourar, acrescente o frango picado e cozinhe até ficar bem macio. Bata no liquidificador a cenoura cozida, a batata e o tomate com um pouco da água do cozimento e despeje esse creme na panela com o frango. Misture bem até ficar encorpado. Finalize com cúrcuma, páprica doce, cebolinha e ajuste a textura com mais água se necessário."},
+  {id:2,cat:"Comidas",name:"Molho De Tomate Maromba",ing:["6 tomates maduros","1/2 cebola grande","1 cenoura","1/2 beterraba","7 dentes de alho"],prep:"Corte todos os ingredientes grosseiramente e leve para assar a 180° até murchar (pode ser na airfryer também). Depois passe no liquidificador ou processador até formar um creme. Congela nas forminhas de silicone."},
+  {id:3,cat:"Comidas",name:"Carne Moída Com Milho",ing:["500g de carne moída (patinho)","1/2 cebola picadinha","2 dentes de alho amassados","Fio de azeite","Páprica doce e orégano","1 colher de sopa de molho de tomate","Milho verde cozido","Salsinha e cebolinha","Sal: opcional - Bebê 1+"],prep:"Na panela coloque um fio de azeite, acrescente a cebola e o alho para dourar. Acrescente a carne, a páprica, o orégano e sal (se for usar). Deixe cozinhar. Depois da carne refogada, adicione o milho cozido e finalize com salsinha e cebolinha."},
+  {id:4,cat:"Comidas",name:"Bolinho De Arroz",ing:["1 xícara de arroz","250g de carne moída","1 colher sopa de cebola picada","2 dentes de alho","Páprica doce","1 batata inglesa","Salsinha e cúrcuma a gosto","Tapioca (para liga e empanar)"],prep:"Refogue cebola e alho no azeite, frite a carne, coloque páprica doce e acrescente o arroz. Água até cobrir. Cozinhe e reserve a metade para os bolinhos. Cozinhe a batata inglesa, amasse e junte com o arroz reservado. Acrescente salsinha, cúrcuma e tapioca até dar liga. Faça bolinhas, empane na tapioca e leve para assar."},
+  {id:5,cat:"Comidas",name:"Quibe De Abóbora",ing:["2 xícaras de abóbora cozida (cabotiá)","1 xícara de trigo","1 xícara de água quente","2 xícaras de carne moída","1/2 cebola","2 dentes de alho","Cebolinha a gosto","1 colher de sopa de azeite"],prep:"Hidrate o trigo com água quente por 10 minutos. Misture a carne moída com a abóbora amassada, rale a cebola e o alho diretamente na mistura. Acrescente cebolinha e o trigo hidratado. Misture com as mãos. Unte uma assadeira com azeite, espalhe a massa e leve ao forno para assar até dourar."},
+  {id:6,cat:"Comidas",name:"Mini Hambúrguer Maromba",ing:["1kg de patinho moído","1/2 cebola","2 dentes de alho","Páprica doce"],prep:"Tempere a carne com cebola ralada, alho amassado e páprica doce. Molde os mini hambúrgueres e congele. Na hora de fazer, unte a panela com azeite, doure os dois lados e adicione um pouco de água, tampando para cozinhar por dentro."},
+  {id:7,cat:"Comidas",name:"Kafta De Espinafre",ing:["1kg de patinho moído","1/2 cebola","2 dentes de alho","Páprica doce","Espinafre"],prep:"Ferva o espinafre, escorra e retire o excesso de água com um pano. Pique bem miudinho. Tempere a carne com cebola ralada, alho amassado e páprica doce. Misture o espinafre e molde as kaftas. Doure na panela com azeite e cozinhe com um pouco de água tampado."},
+  {id:8,cat:"Comidas",name:"Risoto De Abóbora",ing:["1 xícara de arroz","2 xícaras de abóbora picada","1/2 cebola picada","1 dente de alho","1 colher sopa de azeite","Salsa e cebolinha"],prep:"Cozinhe a abóbora e bata no liquidificador com a água do cozimento. Refogue cebola e alho no azeite, adicione o arroz e misture. Acrescente o creme de abóbora e cozinhe em fogo baixo, adicionando água aos poucos até o arroz ficar cremoso. Finalize com tempero verde."},
+  {id:9,cat:"Comidas",name:"Torta De Frango Com Legumes",ing:["3 ovos","1/2 cenoura ralada","1 tomate picado","Milho verde e ervilha","Frango desfiado","Páprica doce e tempero verde","40ml de leite","4 colheres de farinha de aveia","1 colher de fermento","Queijo opcional"],prep:"Bata os ovos rapidamente, misture cenoura, tomate, milho, ervilha e frango. Tempere com páprica e tempero verde. Acrescente o leite, farinha de aveia e misture. Por último o fermento. Despeje em uma forma, coloque queijo por cima e leve ao forno 180° por 30-40 min."},
+  {id:10,cat:"Comidas",name:"Feijão Turbinado",ing:["500g de feijão","1 cebola","5 dentes de alho","Páprica doce","1/2 beterraba","120g de abóbora"],prep:"Deixe o feijão de molho. Coloque na pressão com cebola, alho, páprica, beterraba e abóbora. Cubra com água e cozinhe 25-35 min. Retire a abóbora e beterraba, bata no liquidificador com caldo e devolva ao feijão. Deixe ferver mais um pouco."},
+  {id:11,cat:"Comidas",name:"Arroz Turbinado",ing:["2 xícaras de arroz","2 colheres sopa de cebola","2 dentes de alho","1/2 xícara de tomate cereja","80g de abóbora","Pedaço de inhame","1/2 cenoura"],prep:"Refogue cebola e alho, despeje o arroz e cubra com água. Em outra panela cozinhe os legumes e bata no liquidificador com um pouco da água do cozimento. Despeje no arroz enquanto cozinha."},
+  {id:12,cat:"Comidas",name:"Risoto De Cenoura E Frango",ing:["1 cenoura picada","2 xícaras de água","1 colher sopa de azeite","1/2 cebola","1 dente de alho","1 xícara de arroz","1 xícara de frango cozido e desfiado"],prep:"Cozinhe a cenoura e bata no liquidificador com a água, formando um caldo. Refogue cebola e alho, adicione o arroz e o caldo. Cozinhe em fogo baixo até ficar cremoso. Acrescente o frango desfiado e finalize."},
+  {id:13,cat:"Comidas",name:"Rabada Maromba",ing:["2kg de rabada","1 cebola","1 colher sobremesa de alho","1 garrafa de passata","500ml de água","Páprica doce","2 cenouras médias","1 batata média","1 inhame grande"],prep:"Limpe bem a rabada. Sele na pressão com azeite. Adicione cebola, alho, molho de tomate, água e páprica. Cozinhe 40 min na pressão. Adicione cenoura, batata e inhame picados. Mais 5 min na pressão."},
+  {id:14,cat:"Comidas",name:"Lentilha Maromba",ing:["350g de lentilha","Azeite, cebola, alho","2 folhas de louro","Orégano, páprica doce","1 cenoura, 1 tomate, 1 batata","Salsinha para finalizar"],prep:"Deixe a lentilha de molho. Na pressão, refogue azeite com cebola e alho. Adicione lentilha, louro, orégano, páprica, legumes. Cubra com água e cozinhe 10 min. Retire os legumes, bata com caldo e devolva. Finalize com salsinha."},
+  {id:15,cat:"Comidas",name:"Creme De Espinafre Com Inhame",ing:["4 inhames pequenos cozidos","1 maço de espinafre","Fio de azeite","1/2 cebola","2 dentes de alho"],prep:"Cozinhe o inhame. Refogue o espinafre no azeite com cebola e alho, acrescente um pouco de água e espere murchar. Adicione o inhame para pegar sabor. Processe com mixer até virar um creme maravilhoso."},
+  {id:16,cat:"Comidas",name:"Batata Doce Rústica",ing:["1 batata-doce média","1-2 colheres sopa de azeite","Alecrim fresco","Sal opcional - Bebê 1+"],prep:"Corte a batata doce em palitos, coloque em forma. Regue com azeite, pitada de sal e ramos de alecrim. Leve ao forno a 200° por 35 minutos."},
+  {id:17,cat:"Comidas",name:"Frango Cremoso",ing:["3 dentes de alho","1/2 cebola","1 cenoura","1 pedaço de abóbora","1/2 kg frango","Páprica doce e orégano","Salsinha"],prep:"Cozinhe abóbora e cenoura com pouca água e bata no liquidificador. Refogue alho e cebola, adicione o frango e sele. Acrescente o creme e tempere com páprica e orégano. Finalize com salsinha."},
+  {id:18,cat:"Comidas",name:"Polenta Turbinada",ing:["1 colher cebola picada","1 dente de alho","Azeite","1/2 xícara abóbora em cubos","2 colheres sopa de flocão","2 xícaras de água","Cebolinha"],prep:"Refogue cebola e alho no azeite, adicione abóbora e refogue. Adicione a água, cozinhe até a abóbora ficar macia. Acrescente o flocão, misture e cozinhe em fogo baixo mexendo sempre até engrossar. Finalize com cebolinha."},
+  {id:19,cat:"Comidas",name:"Abobrinha Com Frango",ing:["1 abobrinha em cubos","1 cebola","1 alho","Azeite","Filé de peito de frango","Páprica doce e orégano"],prep:"Triture cebola e alho. Refogue na pressão, acrescente o frango e tempere. Cubra com água e cozinhe 15 min na pressão. Refogue a abobrinha com temperos até ficar macia. Acrescente o frango desfiado e a água do cozimento. Finalize com cebolinha."},
+  {id:20,cat:"Comidas",name:"Torta De Atum De Liquidificador",ing:["3 ovos","1 xícara de leite","50g queijo parmesão","1 xícara farinha de aveia","1 colher chá fermento","2 latas de atum","1/2 cebola, 1 tomate","Milho e ervilha","Mussarela"],prep:"Massa: bata ovos, leite e parmesão no liquidificador, misture na farinha de aveia e adicione fermento. Recheio: misture atum, milho, ervilha, tomate, cebola, azeite e tempero verde. Despeje metade da massa em forma, adicione o recheio, cubra com mussarela e o restante da massa. Forno 180° até dourar."},
+  {id:21,cat:"Comidas",name:"Moqueca De Tilápia",ing:["400g de tilápia","1/2 cebola, 1 tomate","350ml de caldo de legumes","70ml de leite de coco","Páprica doce","Extrato de tomate","Salsinha ou coentro"],prep:"Refogue cebola no azeite, acrescente tomate, extrato e páprica. Adicione a tilápia e o caldo de legumes. Cozinhe até o peixe ficar macio. Finalize com leite de coco e ervas."},
+  // PAPINHAS
+  {id:22,cat:"Papinhas",name:"Purê De Batata-Doce Com Frango",ing:["1 batata-doce média (~150g)","1 filé de frango (~50g)","Salsinha picada","Azeite de oliva"],prep:"Cozinhe a batata-doce em cubos e o frango separadamente. Amasse a batata e desfie o frango. Misture com salsinha e azeite. Adicione água do cozimento se necessário."},
+  {id:23,cat:"Papinhas",name:"Papinha De Abóbora Com Arroz",ing:["1/2 xícara de abóbora em cubos","2 colheres de arroz branco cozido","1 dente de alho pequeno","Azeite"],prep:"Cozinhe a abóbora. Refogue o alho com azeite. Amasse a abóbora, adicione o arroz e o alho refogado. Ajuste a textura com água morna."},
+  {id:24,cat:"Papinhas",name:"Purê De Inhame Com Carne Moída",ing:["1 inhame médio (~150g)","2 colheres de carne moída","1 colher cebola picada","Azeite"],prep:"Cozinhe o inhame e a carne separadamente com cebola e azeite. Amasse o inhame e misture com a carne. Adicione água para consistência cremosa."},
+  {id:25,cat:"Papinhas",name:"Tilápia Com Arroz E Ervilhas",ing:["1 filé de tilápia (~60g)","2 colheres de arroz cozido","2 colheres de ervilhas","Azeite, salsinha"],prep:"Cozinhe a tilápia no vapor e desfie. Cozinhe as ervilhas. Misture tudo com arroz, salsinha e um fio de azeite."},
+  {id:26,cat:"Papinhas",name:"Salmão Com Purê De Mandioquinha",ing:["1 pedaço de salmão (~60g)","1 mandioquinha (~100g)","Cebolinha, azeite"],prep:"Cozinhe o salmão e desfie. Cozinhe a mandioquinha e amasse. Misture com cebolinha e azeite. Ajuste textura se necessário."},
+  {id:27,cat:"Papinhas",name:"Carne Moída Com Arroz E Espinafre",ing:["2 colheres carne moída","2 colheres arroz cozido","1/2 xícara espinafre","Azeite, cebola"],prep:"Refogue a carne com cebola no azeite. Cozinhe o espinafre. Misture tudo ao arroz e amasse um pouco."},
+  {id:28,cat:"Papinhas",name:"Papinha De Lentilha Com Batata-Doce",ing:["2 colheres lentilha cozida","1/2 batata-doce (~80g)","1/2 cenoura (~50g)","Azeite"],prep:"Cozinhe batata-doce e cenoura. Amasse os legumes e misture com lentilha. Adicione azeite e água morna se necessário."},
+  {id:29,cat:"Papinhas",name:"Polenta Com Carne Desfiada",ing:["2 colheres fubá pré-cozido","1 xícara de água","2 colheres carne desfiada","Azeite, salsinha"],prep:"Dissolva o fubá em água fria e cozinhe mexendo sempre por 10 min. Misture a carne com azeite e salsinha. Sirva sobre a polenta."},
+  {id:30,cat:"Papinhas",name:"Purê De Batata Com Ovo E Cebolinha",ing:["1 batata média (~120g)","1 ovo","Cebolinha, azeite"],prep:"Cozinhe a batata e amasse. Cozinhe o ovo firme e pique. Misture com a batata, cebolinha e azeite. Sirva morno."},
+  {id:31,cat:"Papinhas",name:"Sopa Cremosa De Legumes Com Cúrcuma",ing:["1/2 cenoura","1/2 chuchu","Abóbora (~80g)","Cúrcuma, azeite"],prep:"Cozinhe todos os legumes. Amasse ou bata no mixer com cúrcuma e azeite. Sirva morno cremoso."},
+  {id:32,cat:"Papinhas",name:"Papinha De Arroz Integral Com Frango",ing:["2 colheres arroz integral cozido","Frango cozido (~50g)","1/2 xícara espinafre cozido","Azeite"],prep:"Cozinhe o frango e desfie. Misture com arroz integral e espinafre. Amasse tudo e adicione azeite."},
+  {id:33,cat:"Papinhas",name:"Tilápia Com Purê De Mandioquinha E Cenoura",ing:["Tilápia (~60g)","1/2 mandioquinha (~80g)","1/2 cenoura (~50g)","Azeite"],prep:"Cozinhe a tilápia e desfie. Cozinhe e amasse a mandioquinha e a cenoura. Misture tudo e finalize com azeite."},
+  {id:34,cat:"Papinhas",name:"Feijão Com Arroz, Beterraba E Alho",ing:["2 colheres feijão cozido","2 colheres arroz cozido","2 fatias beterraba cozida","1 dente de alho, azeite"],prep:"Refogue o alho no azeite. Amasse o feijão com arroz e beterraba. Misture com o alho refogado e sirva morno."},
+  {id:35,cat:"Papinhas",name:"Carne Com Purê De Abóbora E Tomilho",ing:["2 colheres carne desfiada","1/2 xícara abóbora cozida","Tomilho fresco, azeite"],prep:"Cozinhe a abóbora e amasse. Misture a carne desfiada e o tomilho. Finalize com azeite."},
+  {id:36,cat:"Papinhas",name:"Papinha De Frango Com Batata-Doce",ing:["Frango cozido (~50g)","1/2 batata-doce (~80g)","Salsinha, azeite"],prep:"Cozinhe frango e batata. Desfie o frango e amasse a batata. Misture com salsinha e azeite."},
+  {id:37,cat:"Papinhas",name:"Papinha De Carne Com Arroz E Cenoura",ing:["2 colheres carne moída","2 colheres arroz cozido","2 colheres cenoura ralada","Azeite"],prep:"Refogue a carne. Misture com arroz e cenoura. Amasse um pouco, adicione azeite."},
+  {id:38,cat:"Papinhas",name:"Creme De Batata Com Ervilhas E Alho-Poró",ing:["1 batata média cozida","2 colheres ervilhas cozidas","Alho-poró, azeite"],prep:"Refogue alho-poró no azeite. Amasse batata e ervilhas. Misture com alho-poró e sirva morno."},
+  {id:39,cat:"Papinhas",name:"Panqueca De Abóbora Com Aveia",ing:["2 colheres purê de abóbora","2 colheres aveia fina","1 ovo","Azeite ou óleo de coco"],prep:"Misture purê, ovo e aveia. Cozinhe dos dois lados em frigideira untada."},
+  {id:40,cat:"Papinhas",name:"Macarrão Com Molho De Abóbora E Frango",ing:["Macarrão pequeno","2 colheres abóbora cozida","2 colheres frango desfiado","Azeite"],prep:"Cozinhe o macarrão. Refogue abóbora e frango no azeite. Misture com macarrão. Amasse se necessário."},
+  {id:41,cat:"Papinhas",name:"Macarrão Com Espinafre E Ricota",ing:["Macarrão pequeno","4 folhas de espinafre","1 colher ricota fresca","Cebola opcional, azeite"],prep:"Cozinhe espinafre e bata com água. Refogue cebola, adicione espinafre, ricota e macarrão cozido. Misture bem."},
+  {id:42,cat:"Papinhas",name:"Carne De Panela Com Legumes",ing:["100g músculo em cubos","Batata-doce, cenoura","Cebola opcional, azeite"],prep:"Refogue cebola, adicione carne e sele. Junte legumes e cubra com água. Cozinhe 25-30 min na pressão. Amasse legumes e desfie a carne."},
+  {id:43,cat:"Papinhas",name:"Carne De Panela Com Chuchu E Abobrinha",ing:["100g patinho em cubos","1 chuchu pequeno","1/2 abobrinha","Azeite, cebola"],prep:"Refogue cebola, sele carne e adicione legumes. Cozinhe 20 min na pressão. Desfie carne e amasse legumes."},
+  {id:44,cat:"Papinhas",name:"Camarão Com Purê De Batata-Doce",ing:["1 batata-doce pequena","3-4 camarões médios","Cebola opcional, azeite"],prep:"Cozinhe batata-doce e amasse. Refogue cebola e camarões até rosados. Desfie e misture ao purê."},
+  {id:45,cat:"Papinhas",name:"Arroz Cremoso Com Camarão E Abobrinha",ing:["2 colheres arroz cozido","2 camarões médios","2 colheres abobrinha picada","Cebola, azeite"],prep:"Cozinhe abobrinha. Refogue cebola e camarões. Misture com arroz e abobrinha com água. Sirva cremoso."},
+  {id:46,cat:"Papinhas",name:"Tilápia Desfiada Com Purê De Mandioquinha",ing:["1 filé tilápia","1 mandioquinha média","Cebola, azeite"],prep:"Cozinhe mandioquinha e amasse. Refogue cebola e tilápia. Desfie e misture ao purê."},
+  {id:47,cat:"Papinhas",name:"Arroz Molhadinho Com Tilápia E Cenoura",ing:["2 colheres arroz cozido","1 filé tilápia","1 cenoura ralada","Cebola, azeite"],prep:"Cozinhe cenoura. Refogue cebola e tilápia. Misture ao arroz e cenoura com água morna."},
+  {id:48,cat:"Papinhas",name:"Músculo Na Pressão Com Cenoura E Mandioquinha",ing:["100g músculo em cubos","1 cenoura pequena","1 mandioquinha média","Cebola, azeite"],prep:"Refogue cebola, sele músculo. Adicione legumes e cubra com água. Cozinhe 30 min na pressão. Desfie carne e amasse legumes."},
+  // PÃES
+  {id:49,cat:"Pães",name:"Pão De Forma Sem Glúten",ing:["3 ovos","50ml azeite","240ml água morna","150g farinha de arroz","90g polvilho doce","50g amido de milho","40g fécula de batata","10g fermento biológico","5g goma xantana","7g fermento químico","30g açúcar","Sal opcional"],prep:"Misture todos os secos. Acrescente ovos e óleo. Adicione água morna aos poucos até massa homogênea. Transfira para assadeira, deixe descansar 30 min e leve ao forno."},
+  {id:50,cat:"Pães",name:"Pão De Cenoura",ing:["3 ovos","100g cenoura crua","150ml água morna","60ml óleo","150g farinha de arroz","150g polvilho doce","Goma xantana, fermento biológico","Sal opcional"],prep:"Bata cenoura, ovos, óleo e água no liquidificador. Misture com secos em tigela. Transfira para forma untada e leve ao forno 180° por 35-40 min."},
+  {id:51,cat:"Pães",name:"Pão Bisnaguinha De Cenoura",ing:["260g farinha de arroz","100g polvilho doce","25g farinha de amêndoas","25g farinha grão de bico","Goma xantana, 3 ovos","Açúcar demerara, fermento biológico","Óleo de coco, 180ml água","120g cenoura crua"],prep:"Bata ovos, açúcar, óleo, água e cenoura no liquidificador. Misture ao mix de farinha e fermento. Deixe crescer 1 hora, molde e asse 180° por 25 min."},
+  {id:52,cat:"Pães",name:"Pão De Aveia",ing:["2 ovos","400ml água","30ml azeite","6g goma xantana","250g farinha aveia s/ glúten","100g farinha arroz","50g polvilho doce","Fermento químico","Sal opcional"],prep:"Misture os secos. Bata azeite e ovos, adicione às farinhas. Acrescente água aos poucos até massa homogênea. Por último o fermento. Asse em forma untada 180° por 40 min."},
+  {id:53,cat:"Pães",name:"Pão De Fubá",ing:["1 xícara mix farinhas s/ glúten","1 xícara fubá","Sal opcional","1 ovo","1/4 xícara óleo","250ml água","Fermento biológico"],prep:"Misture farinhas e fubá. Bata ovo com óleo e adicione aos secos. Acrescente água aos poucos. Adicione fermento. Transfira para forma, polvilhe fubá e asse 180° por 30 min."},
+  {id:54,cat:"Pães",name:"Pãozinho De Batata",ing:["1 xícara batata cozida amassada","1 ovo, azeite","1 colher leite em pó","Mix farinhas s/ glúten","Gergelim ou chia"],prep:"Misture batata, ovo, azeite e leite em pó. Adicione farinha até desgrudar das mãos. Molde bolinhas com recheio à escolha, pincele gema e polvilhe gergelim. Asse 180° por 15-20 min."},
+  {id:55,cat:"Pães",name:"Pão Caseiro Macio",ing:["500g farinha de trigo","240ml água morna","2 colheres açúcar","70ml óleo ou 2 colheres manteiga","1 ovo, sal","10g fermento biológico","Gergelim"],prep:"Misture fermento, água, óleo, ovo e açúcar. Acrescente metade da farinha, misture. Adicione sal e restante da farinha, sove 5 min. Descanse 1h, modele, crescer 20 min, pincele gema e asse 180°."},
+  {id:56,cat:"Pães",name:"Pão De Abobrinha",ing:["4 ovos","1 abobrinha grande","1 xícara mix farinha s/ glúten","Mussarela opcional","Sal opcional","1 colher fermento"],prep:"Rale a abobrinha e retire excesso de água. Misture ovos, sal e queijo. Adicione abobrinha, farinha e fermento. Despeje em forma de pão e asse 180° por 30-40 min."},
+  {id:57,cat:"Pães",name:"Bolo De Pão De Queijo",ing:["3 ovos","1/2 xícara óleo","1 xícara leite vegetal","50g mussarela","50g parmesão ralado","400g polvilho doce","1 colher fermento"],prep:"Bata tudo no liquidificador exceto o fermento. Adicione fermento e misture. Unte forma e asse 180° por 20 min ou até dourar."},
+  {id:58,cat:"Pães",name:"Pão De Castanhas",ing:["1 xícara castanhas mistas","1/2 xícara aveia","2 colheres psyllium","2 colheres linhaça dourada","Sal opcional","Cranberry opcional","3 ovos","1 e 1/4 xícara iogurte"],prep:"Triture castanhas, aveia, linhaça e psyllium. Misture com ovos, sal, iogurte e cranberry. Por último o fermento. Asse em ramekins untados 180° por 25 min."},
+  // BOLOS
+  {id:59,cat:"Bolos",name:"Bolo De Abóbora Com Coco",ing:["200g abóbora cozida","2 ovos","5 bananas pequenas","50g uva passas branca","100g coco fresco","100ml água","150g farelo de aveia","1 colher fermento"],prep:"Bata abóbora, ovos, bananas, passas e coco no liquidificador. Misture farelo de aveia e fermento delicadamente. Asse 180° por 20-25 min."},
+  {id:60,cat:"Bolos",name:"Bolo De Chocolate Com Aveia",ing:["4 ovos","1/2 xícara óleo de coco","3/4 xícara água morna","1/2 xícara passas","Açúcar de tâmara","Farinha de aveia, aveia em flocos","Amido de milho, cacau","Fermento"],prep:"Bata ovos, passas, açúcar de tâmara e óleo. Misture secos. Despeje líquido nos secos. Adicione fermento delicadamente. Asse 180° por 30 min."},
+  {id:61,cat:"Bolos",name:"Bolo De Cenoura Mesclado",ing:["3 ovos","1/2 xícara óleo de coco","1/2 xícara passas","Açúcar de tâmara","150g cenoura","Farinha de arroz, polvilho doce","Cacau, fermento"],prep:"Bata ovos, passas, açúcar, óleo e cenoura. Adicione farinhas. Divida a massa e adicione cacau na metade. Coloque massas alternadas na forma. Asse 200° por 30 min."},
+  {id:62,cat:"Bolos",name:"Bolo De Cenoura Com Laranja",ing:["3 ovos","1/2 xícara passas","Açúcar de tâmara, óleo","1 cenoura média","Suco de 1 laranja","Mix farinhas s/ glúten","Fermento"],prep:"Bata ovos, passas, açúcar, óleo, cenoura e suco de laranja. Misture ao mix de farinhas. Adicione fermento. Asse 180° por 30 min."},
+  {id:63,cat:"Bolos",name:"Bolo De Batata Doce",ing:["4 ovos","150g batata doce crua","1/2 xícara óleo","3/4 xícara água","1/2 xícara passas","Açúcar de tâmara","Farinha de arroz, polvilho doce","Fermento"],prep:"Bata ovos com passas e açúcar. Bata batata doce com água. Misture tudo com farinhas. Adicione fermento. Asse 180° por 30 min."},
+  {id:64,cat:"Bolos",name:"Bolo De Abacaxi Com Coco E Iogurte",ing:["3 ovos","20ml óleo","200g iogurte natural","50g coco fresco","1/2 xícara uva passas","100g abacaxi cozido","150g farelo de aveia","Fermento"],prep:"Bata ovos, óleo, iogurte, coco, passas e abacaxi. Misture farelo de aveia e fermento. Asse 180° por 25-30 min."},
+  {id:65,cat:"Bolos",name:"Bolo Choco Raiz (Batata Doce)",ing:["2 ovos","200g batata doce cozida","80g uva passa","50g cacau em pó","30ml óleo de coco","100ml água","150g farelo de aveia","Amido de milho, fermento"],prep:"Bata ovos, batata, passas, cacau, óleo e água. Misture farelo, amido e gotas. Adicione fermento. Asse 180° por 25-35 min."},
+  {id:66,cat:"Bolos",name:"Bolo De Banana, Cacau E Aveia",ing:["2 ovos","4 bananas grandes","4 colheres óleo de coco","1/2 xícara uva passas","Cacau em pó","1 xícara farinha de aveia","Fermento"],prep:"Bata ovos, bananas, passas e óleo. Misture com farinha de aveia, cacau e fermento. Asse 180° por 25 min."},
+  {id:67,cat:"Bolos",name:"Bolo Nuvem De Coco",ing:["200g coco ralado seco","120ml água","3 ovos","1/2 xícara passas","Açúcar de tâmara","200ml leite de coco","100g amido de milho","Fermento"],prep:"Hidrate o coco. Bata ovos, passas, açúcar de tâmara e leite de coco. Misture ao coco hidratado e amido. Adicione fermento. Asse 180° por 30-40 min."},
+  {id:68,cat:"Bolos",name:"Bolo De Laranja 1",ing:["3 ovos","3/4 xícara suco de laranja","1/2 xícara óleo","Farinha de arroz, polvilho doce","Passas ou açúcar de tâmara","Fermento"],prep:"Bata ovos, passas e óleo. Misture farinhas. Adicione líquido e suco de laranja. Fermento por último. Asse 200° por 20-25 min."},
+  {id:69,cat:"Bolos",name:"Bolo De Laranja 2",ing:["3 ovos","1/2 xícara passas","1/2 xícara óleo","3/4 xícara suco de laranja","2 xícaras mix farinha s/ glúten","Fermento"],prep:"Bata ovos, passas, óleo e suco. Misture ao mix de farinha. Adicione fermento delicadamente. Asse 180° por 30 min."},
+  {id:70,cat:"Bolos",name:"Bolo Nuvem De Limão",ing:["4 ovos","1/2 xícara passas","Suco de 1 limão","200g creme de leite fresco","2 xícaras amido de milho","Fermento"],prep:"Bata ovos, passas, limão, creme de leite e amido. Misture fermento delicadamente. Asse 180° por 30-40 min."},
+  {id:71,cat:"Bolos",name:"Bolo De Nozes",ing:["300g tâmaras","240ml água","3 ovos","45ml óleo de coco","180g aveia em flocos","50g nozes","Fermento","Baunilha opcional"],prep:"Bata tâmaras, água, ovos e óleo. Adicione aveia em pulsar. Por último fermento. Despeje em forma, polvilhe nozes e asse 180° por 30-40 min."},
+  {id:72,cat:"Bolos",name:"Bolinho De Iogurte",ing:["2 ovos","1 pote iogurte natural","50g farinha de aveia","50g farinha de arroz","3 colheres mel de tâmara","Fermento"],prep:"Misture ovos e iogurte. Adicione farinhas e mel de tâmara. Por último fermento delicadamente. Asse em forminhas 180° por 20-25 min."},
+  {id:73,cat:"Bolos",name:"Bolo Mesclado De Chocolate Com Cenoura",ing:["4 ovos","330g cenoura crua","130ml óleo de coco","1/2 xícara passas","200g mix farinha s/ glúten","30g cacau em pó","Fermento"],prep:"Bata ovos, cenoura, óleo e passas. Misture ao mix de farinha. Divida a massa em duas partes, adicione cacau em uma. Coloque na forma alternando as massas. Asse 180° por 30 min."},
+  {id:74,cat:"Bolos",name:"Bolo De Abobrinha Com Banana",ing:["300g abobrinha ralada","3 bananas maduras","3 ovos, 30ml óleo","1/2 xícara passas","Amido de milho","150g aveia","Fermento"],prep:"Bata bananas, ovos, óleo e passas. Misture aos secos com abobrinha ralada. Adicione fermento. Asse 180° por 30 min."},
+  {id:75,cat:"Bolos",name:"Bolo De Abobrinha Com Chocolate",ing:["1 abobrinha grande","2 ovos","1/2 xícara passas","Cacau 100%","Óleo de coco","Farinha de aveia","Fermento"],prep:"Bata tudo no liquidificador e adicione fermento por último. Asse 180° por 30 min."},
+  // MUFFINS
+  {id:76,cat:"Muffins",name:"Muffin De Milho Com Goiabada",ing:["3 ovos","2 bananas maduras","2 colheres azeite","1/2 xícara flocão de milho","Passas brancas","Fermento","Geleia de goiaba"],prep:"Bata tudo no liquidificador exceto fermento. Adicione fermento. Nas forminhas, coloque massa, geleia no meio e cubra. Asse 180° por 20 min."},
+  {id:77,cat:"Muffins",name:"Muffin De Coco",ing:["2 ovos","1 pote iogurte natural integral","100g coco ralado seco"],prep:"Bata ovos com iogurte. Misture coco. Distribua em forminhas e asse 180° por 15 min."},
+  {id:78,cat:"Muffins",name:"Muffin De Banana",ing:["3 bananas prata","3 ovos","60g farinha de aveia","Passas, canela","Fermento"],prep:"Amasse bananas, misture ovos, aveia, passas e canela. Por último fermento. Asse em forminhas 180° por 15-20 min."},
+  {id:79,cat:"Muffins",name:"Muffin De Coco Com Banana",ing:["2 ovos","5 colheres leite de coco","Azeite, baunilha","Farinha de aveia, coco seco","Passas, fermento","1 banana"],prep:"Bata ovos até espumar. Adicione leite de coco, farinhas e misture. Fermento por último. Nas forminhas coloque banana em rodelas e despeje a massa. Asse 180° por 15-20 min."},
+  {id:80,cat:"Muffins",name:"Muffin Com Nozes, Castanhas E Amêndoas",ing:["2 ovos","1/2 xícara tâmaras","Azeite, leite vegetal","Polvilho doce, farinha de arroz","Cacau, passas","Mix de castanhas","Fermento"],prep:"Deixe tâmaras de molho e bata com líquidos no liquidificador. Misture às farinhas. Adicione passas e mix de castanhas. Asse em forminhas 180° por 25 min."},
+  {id:81,cat:"Muffins",name:"Muffin De Maracujá",ing:["3 ovos","1 polpa de maracujá","Azeite","Mix farinha de aveia e arroz","Açúcar de tâmara","Fermento"],prep:"Bata ovos, azeite e polpa. Misture farinhas e açúcar. Adicione fermento. Distribua em forminhas e asse 180° por 15-20 min."},
+  {id:82,cat:"Muffins",name:"Muffin De Milho",ing:["1 xícara flocão de milho","2 ovos","1 colher iogurte","Fermento","Recheio à escolha (queijo ou geleia)"],prep:"Hidrate flocão com 1 xícara de água por 10 min. Misture ovos, iogurte e fermento. Despeje metade nas forminhas, coloque recheio e cubra. Asse 150° na airfryer por 10 min."},
+  {id:83,cat:"Muffins",name:"Muffin De Milho Com Laranja",ing:["1 xícara flocão de milho","1/2 xícara suco de laranja","1 ovo","Iogurte ou creme de leite","1 banana madura","Fermento"],prep:"Hidrate flocão com suco de laranja. Bata o ovo. Misture tudo com iogurte e banana. Por último fermento. Asse 180° por 10-15 min."},
+  {id:84,cat:"Muffins",name:"Muffin De Frango",ing:["2 ovos","5 colheres goma de tapioca","150g frango desfiado temperado","Mussarela, orégano","Fermento"],prep:"Bata os ovos e misture todos ingredientes. Nas forminhas adicione frango e preencha com a massa. Cubra com mussarela e orégano. Asse 180° por 30 min."},
+  // PANQUECAS
+  {id:85,cat:"Panquecas",name:"Panqueca De Chocolate",ing:["1 banana madura","1 ovo","2 colheres farinha de aveia","Canela, cacau","Fermento","Pasta de amendoim para servir"],prep:"Amasse banana, adicione ovo, aveia, canela e cacau. Por último fermento. Cozinhe em frigideira em fogo baixo tampada. Vire quando firmar."},
+  {id:86,cat:"Panquecas",name:"Mini Panquecas",ing:["1 ovo","2 colheres farinha de aveia","2 colheres leite em pó","1 banana fatiada","Fermento"],prep:"Bata o ovo. Misture aveia e leite em pó. Adicione banana picada e fermento. Despeje pequenas porções em frigideira untada em fogo baixo. Doure dos dois lados."},
+  {id:87,cat:"Panquecas",name:"Panqueca De Banana E Maçã",ing:["1 ovo","1/2 banana","1/4 maçã com casca","Leite vegetal","Farelo de aveia","Óleo de coco, canela","Fermento"],prep:"Bata banana, maçã, leite, ovo e óleo. Misture aveia e canela. Disponha rodelas de banana e maçã na frigideira, despeje a massa e tampe em fogo baixo. Vire quando firmar."},
+  {id:88,cat:"Panquecas",name:"Panqueca De Banana E Fubá",ing:["1 banana amassada","1 ovo","4 colheres fubá","2 colheres farinha aveia","Azeite, iogurte","Fermento"],prep:"Misture tudo e grelhe em frigideira untada em fogo baixo dos dois lados."},
+  {id:89,cat:"Panquecas",name:"Panqueca De Brócolis",ing:["6 pedaços de brócolis cru","2 ovos","1 colher farinha de aveia","Sal opcional","Queijo mussarela","Tomate, orégano"],prep:"Bata brócolis no processador. Misture ovos e farinha. Cozinhe na frigideira untada em fogo baixo. Coloque queijo, tomate e orégano por cima. Tampe para cozinhar."},
+  // SALGADOS
+  {id:90,cat:"Salgados",name:"Pastel Sem Glúten",ing:["Amido de milho, farinha de arroz","Polvilho doce, goma xantana","Sal, azeite, vinagre","1 ovo, água morna"],prep:"Misture todos os ingredientes adicionando água aos poucos. Abra a massa, corte e recheie. Passe água nas bordas, feche com garfo. Pincele gema e polvilhe gergelim. Asse por 20 min."},
+  {id:91,cat:"Salgados",name:"Pastelzinho De Banana Da Terra",ing:["Banana da terra","3 colheres farinha de aveia","Recheio: queijo ou pasta de amendoim"],prep:"Cozinhe banana no vapor, esfrie, amasse e adicione aveia aos poucos. Modele, achate e corte em discos. Recheie e grelhe em frigideira untada."},
+  {id:92,cat:"Salgados",name:"Pizza Maromba",ing:["2 batatas inglesas cozidas","6-8 colheres farinha de aveia","Azeite","Recheio de sua preferência"],prep:"Amasse batatas e adicione aveia aos poucos. Abra a massa com rolo, corte discos e adicione recheio. Asse 180° por 15 min."},
+  {id:93,cat:"Salgados",name:"Bolinho De Atum",ing:["2 batatas doces cozidas","1 lata de atum","Cebola, salsinha","Farinha de aveia","Aveia para empanar"],prep:"Amasse batata e misture atum escorrido, cebola, ervas e farinha. Molde bolinhas, empane na aveia e asse 200° por 15-20 min."},
+  {id:94,cat:"Salgados",name:"Bolinho De Arroz",ing:["1 xícara arroz cozido","1 colher tapioca","Queijo branco ou mussarela"],prep:"Amasse o arroz, misture tapioca e queijo. Modele bolinhos, borrife azeite e asse 200° por 15-20 min."},
+  {id:95,cat:"Salgados",name:"Mini Batatinhas Maromba",ing:["Batatas bolinha","Azeite","Alecrim ou orégano","Sal opcional"],prep:"Cozinhe batatinhas com casca. Achate levemente com um copo. Regue com azeite, salpique ervas e asse/airfryer 200° até crocantes."},
+  {id:96,cat:"Salgados",name:"Empadinha Maromba",ing:["50g farinha de aveia","50g amido de milho","30g azeite","1 ovo","Sal opcional","Água gelada se necessário"],prep:"Misture secos, ovo e azeite até massa homogênea. Forre forminhas e pré-asse 7 min 180°. Recheie com frango e requeijão. Cubra, pincele gema e asse mais 10 min."},
+  {id:97,cat:"Salgados",name:"Pastel De Abóbora Com Carne",ing:["200g abóbora cozida","1 xícara farinha de aveia","Carne seca desfiada","Requeijão, alho, cebola","Páprica, cheiro-verde"],prep:"Misture abóbora com farinha. Geladeire a massa para dar ponto. Refogue temperos com carne e requeijão. Abra a massa, recheie, feche, pincele gema e asse 180° por 15 min."},
+  {id:98,cat:"Salgados",name:"Empanada De Liquidificador",ing:["2 ovos","1 xícara leite","25g parmesão","1/2 xícara azeite","1 xícara farinha de arroz","Fermento","Recheio de frango"],prep:"Bata tudo no liquidificador, adicione fermento. Distribua metade nas forminhas, coloque recheio e cubra. Asse 180° por 25 min."},
+  {id:99,cat:"Salgados",name:"Salgadinho Na Airfryer",ing:["1 ovo","2 colheres tapioca","Queijo mussarela"],prep:"Bata ovo, misture tapioca e queijo. Cozinhe na frigideira. Corte em pedaços e leve à airfryer 180° por 3 min."},
+  // COOKIES
+  {id:100,cat:"Cookies",name:"Maromba Cookies",ing:["1 xícara farinha de aveia","2 colheres óleo de coco","1 colher amido de milho","1 colher fermento","1 colher flocos de aveia grossa","1 colher cacau 100%"],prep:"Misture até massa moldável. Corte com boca de copo ou faça bolinhas achatadas. Asse 180° por 15 min. Deixe esfriar antes de servir."},
+  {id:101,cat:"Cookies",name:"Cookie De Maçã",ing:["3 maçãs médias descascadas","3 colheres uva passa","3 colheres aveia em flocos","3 colheres pasta de amendoim"],prep:"Leve maçã ao micro-ondas 3 min e amasse. Misture todos os ingredientes, molde e asse 200° por 15 min."},
+  {id:102,cat:"Cookies",name:"Biscoito De Maizena Para Bebês",ing:["1 xícara amido de milho","2 colheres leite em pó","2 colheres óleo de coco","Leite aos poucos (~3 colheres)"],prep:"Misture amido com leite em pó. Adicione óleo e leite aos poucos até massa macia. Molde, asse 180° por 15 min. Esfria crocante."},
+  {id:103,cat:"Cookies",name:"Cookies De Coco Com Limão",ing:["3 ovos","150g coco ralado","3 colheres açúcar de tâmara","Suco de 1/2 limão","Raspas de limão"],prep:"Bata ovos, açúcar e limão até espumar. Adicione coco e raspas. Modele porções em assadeira com papel manteiga. Asse 180° por 15 min, desligar e deixar mais 5 min. Esfriar antes de retirar."},
+  {id:104,cat:"Cookies",name:"Bolacha De Morango",ing:["1 e 1/2 xícara farinha de aveia","2 colheres óleo de coco","1 colher leite","3 colheres geleia de morango"],prep:"Misture tudo, abra com rolo e corte. Asse 180° por 20 min."},
+  {id:105,cat:"Cookies",name:"Bolachinha De Limão Siciliano",ing:["1 xícara farinha de aveia","1/4 xícara uvas-passas hidratadas","1/2 xícara leite em pó","Raspas de limão siciliano","2 e 1/2 colheres manteiga sem sal"],prep:"Misture tudo até massa uniforme. Geladeire 30 min. Abra entre plásticos, corte e asse 180° por 15 min."},
+  // GELEIAS
+  {id:106,cat:"Geleias",name:"Geleia De Goiaba",ing:["6 goiabas maduras","Suco de 1 limão","2 colheres chia"],prep:"Cozinhe goiabas com limão até amolecer. Bata até creme liso. Volte para panela, adicione chia e cozinhe mais 2 min. Esfrie e conserve na geladeira."},
+  {id:107,cat:"Geleias",name:"Geleia De Morango",ing:["500g morangos maduros","2 colheres pasta de uva passas","1 colher suco de limão"],prep:"Cozinhe morangos em fogo médio por 8-10 min. Adicione pasta de passas e limão. Cozinhe até ponto desejado."},
+  {id:108,cat:"Geleias",name:"Geleia De Damasco",ing:["2 xícaras damascos secos","2 xícaras suco de laranja","3 xícaras água","Raspas de limão siciliano"],prep:"Cozinhe damascos com suco, água e raspas em fogo baixo por 30 min. Bata parte da mistura e reintegre. Cozinhe mais 5 min e conserve em potes."},
+  {id:109,cat:"Geleias",name:"Geleia De Laranja",ing:["500ml suco de laranja","Raspas de 2 laranjas","2 colheres mel de passas","1 maçã ralada"],prep:"Leve tudo ao fogo médio mexendo até reduzir e engrossar. Armazene em pote na geladeira."},
+  // DOCES E MOUSSES
+  {id:110,cat:"Doces",name:"Brigadeiro Maromba",ing:["200ml leite de coco","90g leite em pó integral","3 colheres açúcar de tâmara","2 colheres cacau 100%"],prep:"Misture tudo na panela e cozinhe em fogo baixo mexendo sem parar até soltar do fundo. Refrigere 2h. Enrole as bolinhas e passe no cacau ou coco."},
+  {id:111,cat:"Doces",name:"Beijinho De Abacaxi",ing:["1 abacaxi maduro","1 colher óleo de coco","1 xícara coco ralado","2 colheres leite em pó"],prep:"Bata abacaxi e reduza na panela. Adicione óleo, coco e leite em pó. Cozinhe até soltar do fundo. Refrigere 2h e enrole."},
+  {id:112,cat:"Doces",name:"Beijinho Original",ing:["1/2 xícara leite em pó","1/2 xícara coco ralado","5 colheres leite de coco"],prep:"Misture tudo até consistência para moldar. Faça bolinhas e passe no leite em pó. Não vai ao fogo."},
+  {id:113,cat:"Doces",name:"Mousse Do Hulk",ing:["1 banana congelada","1/2 abacate pequeno","1 colher iogurte natural","1 colher leite em pó"],prep:"Bata tudo no liquidificador até textura de mousse."},
+  {id:114,cat:"Doces",name:"Mousse De Morango Com Beterraba",ing:["100g batata-doce cozida","2 fatias beterraba","1 banana congelada","5 morangos médios"],prep:"Bata tudo com pouquinha água até bem cremoso. Leve à geladeira."},
+  {id:115,cat:"Doces",name:"Mousse De Chocolate",ing:["1 banana congelada","1/2 abacate","1 colher cacau 100%","1 colher iogurte","1 colher leite em pó"],prep:"Bata tudo no liquidificador até textura de mousse."},
+  {id:116,cat:"Doces",name:"Mousse Do Soninho (Maracujá)",ing:["1 maracujá","1 banana congelada","2 colheres leite em pó"],prep:"Bata tudo até textura de mousse. Ajuda no soninho do bebê."},
+  {id:117,cat:"Doces",name:"Mousse De Manga",ing:["1/2 manga","1 banana congelada","Pedaço de inhame ou batata doce cozida","Suco de 1/2 laranja"],prep:"Bata tudo no liquidificador até creme liso de mousse."},
+  // MINGAUS
+  {id:118,cat:"Mingaus",name:"Mingau Maromba (Aveia Com Leite Materno)",ing:["120ml água","2 colheres aveia fina","1 banana madura","30ml leite materno"],prep:"Cozinhe água com aveia em fogo baixo mexendo sempre. Desligue, amasse banana e misture. Espere amornar e adicione leite materno."},
+  {id:119,cat:"Mingaus",name:"Chocomaterno",ing:["120ml água","3 colheres farelo de aveia","1 colher cacau 100%","1 banana amassada","Canela opcional","30ml leite materno"],prep:"Cozinhe água com aveia e cacau em fogo baixo. Adicione banana e canela. Quando grosso, desligue e adicione leite materno."},
+  {id:120,cat:"Mingaus",name:"Mingau De Tapioca Com Leite Materno",ing:["150ml água","1 banana amassada","1 colher goma de tapioca","30ml leite materno"],prep:"Misture água, banana e tapioca. Cozinhe em fogo baixo até cremoso. Desligue e adicione leite materno."},
+  {id:121,cat:"Mingaus",name:"Mingau De Fubá",ing:["2 colheres fubá mimoso","150ml água","1 banana amassada","Canela","30ml leite materno"],prep:"Dissolva fubá na água e cozinhe mexendo sempre. Adicione banana e canela. Retire do fogo, espere amornar e adicione leite materno."},
+  {id:122,cat:"Mingaus",name:"Mingau De Chocolate",ing:["150ml água","1 colher farinha de aveia","1 colher cacau","1 colher leite em pó","1 banana amassada"],prep:"Misture tudo exceto banana e cozinhe até engrossar. Adicione banana amassada por último."},
+  {id:123,cat:"Mingaus",name:"Mingau Turbinado De Milho",ing:["1 maçã ralada","1 banana","150ml água","2 colheres flocão","1 colher leite em pó","Canela opcional"],prep:"Misture água, flocão e leite em pó em fogo baixo. Quando cremoso, adicione banana, maçã e canela. Desligue."},
+  {id:124,cat:"Mingaus",name:"Mingau De Pera",ing:["1 pera ralada","150ml água","2 colheres aveia","1 colher leite em pó","Canela opcional"],prep:"Misture tudo e cozinhe em fogo médio até engrossar. Finalize com canela."},
+  {id:125,cat:"Mingaus",name:"Mingau De Batata Doce",ing:["150ml água","1 colher farinha de aveia","1 colher leite em pó","1 batata doce pequena cozida","Canela opcional"],prep:"Misture água, aveia e leite. Adicione batata doce amassada. Cozinhe até engrossar. Finalize com canela."},
+  // ALÉRGICOS
+  {id:126,cat:"Alérgicos",name:"Bolo De Cenoura (Alérgicos)",ing:["200g cenoura","1/2 xícara água","4 colheres óleo de coco","1 xícara passas brancas","Farinha de arroz, fécula, amido","Fermento, goma xantana"],prep:"Bata cenoura, água, óleo e passas no liquidificador. Misture às farinhas. Adicione fermento delicadamente. Asse 180° por 35-40 min."},
+  {id:127,cat:"Alérgicos",name:"Bolo De Laranja (Alérgicos)",ing:["1 xícara mel de passas","Raspas e suco de laranja","1/3 xícara óleo de coco","3/4 xícara leite vegetal","2 xícaras mix farinha s/ glúten","Fermento"],prep:"Misture farinhas e raspas. Adicione mel, suco, óleo e leite vegetal. Por último fermento. Asse 180°."},
+  {id:128,cat:"Alérgicos",name:"Bolo De Banana (Alérgicos)",ing:["3 bananas maduras amassadas","Mel de passas ou açúcar de tâmara","1 e 1/2 xícara mix farinha s/ glúten","Canela, leite de amêndoas","Óleo de coco, fermento"],prep:"Misture tudo deixando fermento por último. Asse 180° por 40 min."},
+  {id:129,cat:"Alérgicos",name:"Bolo De Maracujá (Alérgicos)",ing:["1/2 xícara suco de maracujá","1/3 xícara óleo vegetal","1/2 xícara mel de passas","1 e 1/2 xícara mix farinha s/ glúten","Fermento"],prep:"Misture líquidos com mel de passas. Adicione farinha até massa lisa. Por último fermento. Asse 180° por 25-30 min."},
+  {id:130,cat:"Alérgicos",name:"Bolo De Chocolate (Alérgicos)",ing:["Mel de passas, cacau em pó","Mix farinha s/ glúten","Óleo de coco, água morna","Baunilha opcional, fermento"],prep:"Misture farinhas e cacau. Adicione mel, óleo, água e baunilha. Por último fermento. Asse 180° por 30 min."},
+  {id:131,cat:"Alérgicos",name:"Iogurte De Coco Verde",ing:["2 xícaras polpa de coco verde (~4 cocos)","1/2 xícara água de coco","Suco de 1/2 limão"],prep:"Bata tudo no liquidificador. Coloque em pote de vidro com papel toalha e deixe fermentar 12h fora da geladeira. Guarde na geladeira."},
+  {id:132,cat:"Alérgicos",name:"Iogurte De Tofu",ing:["250g tofu firme","Suco de 1 limão","1/4 mel de passas","1/4 xícara leite vegetal"],prep:"Bata tudo no liquidificador até textura cremosa. Conserve na geladeira em pote fechado."},
+  {id:133,cat:"Alérgicos",name:"Muffin De Fubá (Alérgicos)",ing:["2 bananas maduras","70g fubá mimoso","1/2 xícara leite de coco","Fermento"],prep:"Bata banana, fubá e leite no liquidificador. Adicione fermento. Asse em forminhas 180° por 25 min."},
+  {id:134,cat:"Alérgicos",name:"Bombom De Chocolate (Alérgicos)",ing:["200g batata doce cozida","2 colheres cacau","5 tâmaras","1 colher pasta de amendoim"],prep:"Processe tudo até massinha moldável. Faça bolinhas e passe no xerém de amendoim."},
+  {id:135,cat:"Alérgicos",name:"Tortinha De Banana (Alérgicos)",ing:["50g pasta de amendoim","40g aveia fina","40ml água","180g banana fatiada","Suco de limão, canela"],prep:"Misture massa e forre forminhas. Pré-asse 15 min 200°. Adicione banana, limão e canela. Asse até dourar."},
+  {id:136,cat:"Alérgicos",name:"Tortinha De Abacaxi Com Coco (Alérgicos)",ing:["50g pasta de amendoim","40g aveia fina","40g água","1 abacaxi médio","1 xícara coco fresco","Canela opcional"],prep:"Cozinhe abacaxi e adicione coco. Faça a massa, forre forminhas e pré-asse 15 min. Adicione recheio e asse mais 15 min."},
+  {id:137,cat:"Alérgicos",name:"Brigadeiro Vegano 1",ing:["1 xícara castanha de caju crua","1/2 xícara água quente","Óleo de coco","Açúcar de tâmara","2 colheres cacau 100%"],prep:"Hidrate castanha, bata com água e óleo até creme liso. Adicione tâmara e cacau. Cozinhe em fogo baixo até soltar do fundo. Refrigere 2h e enrole."},
+  {id:138,cat:"Alérgicos",name:"Brigadeiro Vegano 2",ing:["1 xícara tâmaras (ou ameixa)","3 colheres cacau 100%","1 colher óleo de coco","Pitada de sal"],prep:"Hidrate tâmaras 30 min. Processe com cacau, sal e óleo até pasta. Refrigere 2h e enrole."},
+  {id:139,cat:"Alérgicos",name:"Brownie De Abobrinha (Alérgicos)",ing:["1 e 1/2 xícara abobrinha ralada","Mel de passas, cacau","Óleo vegetal","Mix farinha s/ glúten","Fermento"],prep:"Misture abobrinha com mel, cacau e óleo. Adicione farinha. Por último fermento. Asse 180° por 25-30 min."},
+  {id:140,cat:"Alérgicos",name:"Bolo De Chocolate Com Abobrinha (Alérgicos)",ing:["1 abobrinha ralada","Água, óleo de coco","Vinagre de maçã, passas","Bicarbonato, baunilha","Mix farinhas, cacau","Fermento"],prep:"Bata líquidos com abobrinha no liquidificador. Misture farinhas e cacau. Adicione fermento. Asse 180° por 30-40 min."},
+  {id:141,cat:"Alérgicos",name:"Mini Panquecas (Alérgicos)",ing:["1 ovo","2 colheres farinha de aveia","2 colheres leite de coco em pó","1 banana","Fermento"],prep:"Bata ovo. Misture aveia e leite em pó. Adicione banana e fermento. Cozinhe em frigideira untada em fogo baixo dos dois lados."},
+  {id:142,cat:"Alérgicos",name:"Biscoito Maromba (Alérgicos)",ing:["1 e 1/2 xícara farinha de aveia","3 colheres óleo de coco","1 colher água","Açúcar de tâmara, canela"],prep:"Misture farinha, açúcar e canela. Adicione óleo e água até moldável. Asse 180° por 12-15 min."},
+  {id:143,cat:"Alérgicos",name:"Bolachinha De Limão Siciliano (Alérgicos)",ing:["1 xícara farinha de aveia","1/4 xícara passas hidratadas","1/2 xícara leite de coco em pó","Raspas de limão","2 e 1/2 colheres manteiga"],prep:"Misture até massa uniforme. Geladeire 30 min. Abra, corte e asse 180° por 15 min."},
+  {id:144,cat:"Alérgicos",name:"Danette Vegano",ing:["1 inhame pequeno cozido","Brócolis cozido","Mel de passas, cacau","Leite de coco em pó","1/2 xícara água"],prep:"Bata tudo no liquidificador até creme liso. Ajuste textura com água. Geladeire antes de servir."},
+  {id:145,cat:"Alérgicos",name:"Danoninho De Inhame Com Morango",ing:["1 inhame pequeno cozido","5-6 morangos maduros","1 banana madura","Leite materno opcional"],prep:"Bata tudo no liquidificador até creme homogêneo. Sirva fresco ou conserve na geladeira por 24h."},
+  {id:146,cat:"Alérgicos",name:"Pão De Queijo Sem Queijo (Aipim)",ing:["1/2 xícara água, 1/4 óleo","Polvilho doce e azedo","Sal, cúrcuma","1 xícara mandioca cozida amassada"],prep:"Ferva água com óleo. Misture polvilhos e temperos. Despeje água quente e adicione mandioca. Modele bolinhas e asse até dourar."},
+  {id:147,cat:"Alérgicos",name:"Pãozinho Sem Queijo (Batata E Cenoura)",ing:["1/2 xícara batata cozida","1/4 xícara cenoura cozida","Azeite, chia","1 xícara tapioca","Polvilho azedo"],prep:"Misture tudo exceto polvilho. Adicione polvilho aos poucos até desgrudar das mãos. Faça bolinhas e asse 200° por 25 min."},
+  {id:148,cat:"Alérgicos",name:"Bolinhas De Fubá Na Frigideira",ing:["1 xícara fubá","1 xícara polvilho doce","Sal opcional","Fermento","Leite de coco"],prep:"Misture secos. Adicione leite de coco até massa moldável. Faça bolinhas, achate e doure na frigideira em fogo baixo dos dois lados."},
+  {id:149,cat:"Alérgicos",name:"Bolinhas De Batata Assada",ing:["2 xícaras batatas cozidas","Azeite, sal opcional","Amido de milho ou mix farinhas"],prep:"Misture batata, azeite e sal. Adicione amido até desgrudar das mãos. Faça bolinhas, pincele azeite e asse/airfryer 200° por 30 min."},
+  {id:150,cat:"Alérgicos",name:"Mini Hambúrguer De Quinoa",ing:["1/2 xícara quinoa","Aveia, amido de milho","Gergelim, cebola roxa","Salsinha, cenoura ralada","Alho, páprica doce"],prep:"Cozinhe quinoa. Misture todos ingredientes e reserve 10 min para hidratar. Modele hambúrgueres e prepare na airfryer, forno ou frigideira."},
+  {id:151,cat:"Alérgicos",name:"Muffin De Grão-De-Bico Com Vegetais",ing:["Abobrinha e cenoura raladas","Cebola, páprica","Farinha de grão-de-bico","Água, fermento"],prep:"Refogue cebola e legumes. Misture farinha com água. Adicione legumes. Distribua em forminhas e asse 200° por 30 min."},
+  {id:152,cat:"Alérgicos",name:"Pastel Assado Sem Ovo",ing:["2 xícaras farinha de aveia","1 pote iogurte natural","Sal, páprica, orégano","Azeite, gergelim"],prep:"Misture tudo até massa maleável. Abra, corte em círculos, recheie e feche. Asse 180° por 20 min."},
+,
+  {id:153,cat:"Bases",name:"Mix De Farinhas Sem Gluten",ing:["600g de farinha de arroz","300g de amido de milho ou fecula de batata","15g de goma xantana"],prep:"Misture tudo e guarde num pote bem fechado. Use como substituto da farinha de trigo em bolos, panquecas, waffles, tortinhas, paezinhos e cookies. Dica: voce pode comprar o mix pronto da marca URBANO, bem acessivel e facil de encontrar."},
+  {id:154,cat:"Bases",name:"Mel De Passas",ing:["200g de uvas passas brancas","Agua filtrada para hidratar e bater"],prep:"Hidrate as uvas passas em agua quente por pelo menos 4 horas. Escorra um pouco da agua e transfira para o liquidificador. Adicione gradualmente a agua do molho ate atingir a consistencia desejada. Armazene em pote de vidro esterilizado na geladeira."},
+  {id:155,cat:"Bases",name:"Acucar De Tamara",ing:["150g de tamaras sem caroco","150ml de agua quente"],prep:"Ferve a agua, desliga o fogo, coloca as tamaras, tampa e deixa descansar por no minimo 1 hora. Depois que esfriar, bata tudo no liquidificador ate virar uma calda bem lisinha. Guarde em pote hermetico na geladeira."}
+];
+
+// normalise cat names to match filter keys
+var CAT = {
+  'Comidas':'Comidas','Papinhas':'Papinhas',
+  'Pães':'Paes','Paes':'Paes',
+  'Bolos':'Bolos','Muffins':'Muffins','Panquecas':'Panquecas',
+  'Salgados':'Salgados','Cookies':'Cookies','Geleias':'Geleias',
+  'Doces':'Doces','Mingaus':'Mingaus',
+  'Alérgicos':'Alergicos','Alergicos':'Alergicos',
+  'Bases':'Bases'
+};
+var TAG = {
+  Comidas:'COMIDAS',Papinhas:'PAPINHAS',Paes:'PAES',Bolos:'BOLOS',
+  Muffins:'MUFFINS',Panquecas:'PANQUECAS',Salgados:'SALGADOS',
+  Cookies:'COOKIES',Geleias:'GELEIAS',Doces:'DOCES',
+  Mingaus:'MINGAUS',Alergicos:'ALERGICOS',Bases:'BASES'
+};
+var AGEMAP = {
+  Comidas:'12m',Papinhas:'6m',Paes:'12m',Bolos:'12m',
+  Muffins:'8m',Panquecas:'8m',Salgados:'12m',Cookies:'10m',
+  Geleias:'8m',Doces:'10m',Mingaus:'6m',Alergicos:'6m',Bases:'6m'
+};
+var AGELBL = {'6m':'6m+','8m':'8m+','10m':'10m+','12m':'1 ano+','alerg':'Alerg.'};
+var AGEORD = ['6m','8m','10m','12m'];
+
+// normalise each recipe cat
+recipes.forEach(function(r){
+  r.ncat = CAT[r.cat] || r.cat;
+  r.age  = r.ncat==='Alergicos' ? '6m' : (AGEMAP[r.ncat]||'12m');
+});
+
+var curCat  = 'Todas';
+var curAge  = 'todas';
+var curId   = null;
+var favs    = JSON.parse(localStorage.getItem('mFavs')||'[]');
+var shop    = JSON.parse(localStorage.getItem('mShop')||'[]');
+
+function toast(m){
+  var t=document.getElementById('toast');
+  t.textContent=m; t.classList.add('on');
+  setTimeout(function(){t.classList.remove('on');},2000);
+}
+
+// TABS
+function goTab(name,el){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on');});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on');});
+  el.classList.add('on');
+  document.getElementById('panel-'+name).classList.add('on');
+  var isRec = name==='rec';
+  document.getElementById('srch-wrap').style.display = isRec?'block':'none';
+  document.getElementById('age-bar').style.display   = isRec?'flex':'none';
+  if(name==='fav') renderFavs();
+  if(name==='cmp') renderShop();
+  window.scrollTo(0,0);
+}
+
+// AGE
+function setAge(el,a){
+  document.querySelectorAll('.ap').forEach(function(p){p.classList.remove('on');});
+  el.classList.add('on'); curAge=a; render();
+}
+
+// CAT
+function setCat(el,c){
+  document.querySelectorAll('.chip').forEach(function(ch){ch.classList.remove('on');});
+  el.classList.add('on'); curCat=c; render();
+}
+
+function ageOk(r,f){
+  if(f==='todas') return true;
+  if(f==='alerg') return r.ncat==='Alergicos';
+  return AGEORD.indexOf(r.age)<=AGEORD.indexOf(f);
+}
+
+// RENDER RECIPES
+function render(){
+  var q=document.getElementById('srch-inp').value.toLowerCase();
+  var list=recipes.filter(function(r){
+    var cok = curCat==='Todas'||r.ncat===curCat;
+    var aok = ageOk(r,curAge);
+    var qok = !q||r.name.toLowerCase().indexOf(q)>=0||r.ing.some(function(i){return i.toLowerCase().indexOf(q)>=0;});
+    return cok&&aok&&qok;
+  });
+  document.getElementById('cnt').textContent=list.length+' receitas';
+  if(!list.length){
+    document.getElementById('list').innerHTML='<div class="empty"><span class="empty-ico">&#128269;</span><h4>Nenhuma receita encontrada</h4><p>Tente outro filtro</p></div>';
+    return;
+  }
+  var h='';
+  list.forEach(function(r){
+    var fv=favs.indexOf(r.id)>=0?'&#10084;&#65039;':'&#129293;';
+    h+='<div class="rc" onclick="openDet('+r.id+')">'
+      +'<div class="rtag">'+(TAG[r.ncat]||r.ncat)+'</div>'
+      +'<div class="rname">'+r.name+'</div>'
+      +'<div class="rmeta">&#129380; '+r.ing.length+' ingredientes'
+      +' <span class="abadge">'+(AGELBL[r.age]||r.age)+'</span></div>'
+      +'<div class="rfav" onclick="event.stopPropagation();togFav('+r.id+')">'+fv+'</div>'
+      +'</div>';
+  });
+  document.getElementById('list').innerHTML=h;
+}
+
+// DETAIL
+function openDet(id){
+  var r=null;
+  for(var i=0;i<recipes.length;i++){if(recipes[i].id===id){r=recipes[i];break;}}
+  if(!r) return;
+  curId=id;
+  document.getElementById('det-htitle').textContent=r.name;
+  document.getElementById('det-cat').textContent=TAG[r.ncat]||r.ncat;
+  document.getElementById('det-title').textContent=r.name;
+  document.getElementById('det-age').textContent='Idade: '+(AGELBL[r.age]||r.age);
+  document.getElementById('det-fav').textContent=favs.indexOf(id)>=0?'&#10084;&#65039;':'&#129293;';
+  var ih='';
+  r.ing.forEach(function(ing,j){
+    ih+='<div class="ing-item"><div class="idot"></div><span style="flex:1">'+ing+'</span>'
+      +'<button class="iadd" data-ing="'+ing.replace(/"/g,"&quot;")+'">+Lista</button></div>';
+  });
+  document.getElementById('det-ing').innerHTML=ih;
+  document.querySelectorAll('.iadd').forEach(function(btn){
+    btn.onclick=function(){addSingle(this.getAttribute('data-ing'));};
+  });
+  document.getElementById('det-prep').textContent=r.prep;
+  document.getElementById('det').classList.add('on');
+  document.getElementById('det').scrollTop=0;
+}
+function closeDet(){document.getElementById('det').classList.remove('on');}
+function toggleFavDet(){
+  if(!curId) return;
+  togFav(curId);
+  document.getElementById('det-fav').textContent=favs.indexOf(curId)>=0?'&#10084;&#65039;':'&#129293;';
+}
+function togFav(id){
+  var i=favs.indexOf(id);
+  if(i>=0) favs.splice(i,1); else favs.push(id);
+  localStorage.setItem('mFavs',JSON.stringify(favs));
+  render();
+  if(document.getElementById('panel-fav').classList.contains('on')) renderFavs();
+}
+
+// ADD TO SHOP
+function addSingle(ing){
+  var c=ing.split('(')[0].trim();
+  if(!shop.some(function(s){return s.n.toLowerCase()===c.toLowerCase();})){
+    shop.push({n:c,done:false,src:'Receita'});
+    localStorage.setItem('mShop',JSON.stringify(shop));
+    toast('&#10003; Adicionado: '+c);
+  } else { toast('Ja esta na lista!'); }
+}
+function addAll(){
+  var r=null;
+  for(var i=0;i<recipes.length;i++){if(recipes[i].id===curId){r=recipes[i];break;}}
+  if(!r) return;
+  var n=0;
+  r.ing.forEach(function(ing){
+    var c=ing.split('(')[0].trim();
+    if(!shop.some(function(s){return s.n.toLowerCase()===c.toLowerCase();})){
+      shop.push({n:c,done:false,src:r.name}); n++;
+    }
+  });
+  localStorage.setItem('mShop',JSON.stringify(shop));
+  toast(n+' ingredientes adicionados!');
+}
+
+// IA
+function askIA(){
+  var inp=document.getElementById('ia-inp').value.trim();
+  if(!inp){alert('Digite alguns ingredientes!');return;}
+  var btn=document.querySelector('#panel-ia .btn-r');
+  btn.textContent='Consultando...';btn.disabled=true;
+  document.getElementById('ia-res').style.display='none';
+  fetch('/api/claude',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},
+    body:JSON.stringify({
+      model:'claude-sonnet-4-20250514',
+      max_tokens:800,
+      messages:[{role:'user',content:'Voce e a Mainha, especialista em receitas fit para bebes e familias. Com os ingredientes: '+inp+' sugira 2 receitas saudaveis. Para cada uma: nome, ingredientes e 3 passos de preparo. Seja carinhosa, use emojis. Responda em portugues.'}]
+    })
+  })
+  .then(function(resp){
+    if(!resp.ok) throw new Error('HTTP '+resp.status);
+    return resp.json();
+  })
+  .then(function(d){
+    var txt='';
+    if(d.content) d.content.forEach(function(b){if(b.type==='text')txt+=b.text;});
+    if(!txt) txt='Nao consegui gerar sugestoes. Tente com outros ingredientes!';
+    document.getElementById('ia-txt').innerHTML=txt.replace(/\n/g,'<br>');
+    document.getElementById('ia-res').style.display='block';
+  })
+  .catch(function(e){
+    document.getElementById('ia-txt').innerHTML='<b>Funcionalidade IA</b><br>Esta funcao funciona apenas dentro do Claude.ai.<br>Para usar, abra o app pelo link compartilhado no Claude.';
+    document.getElementById('ia-res').style.display='block';
+  })
+  .finally(function(){
+    btn.textContent='✨ Sugerir receitas';
+    btn.disabled=false;
+  });
+}
+
+// COMPRAS
+function renderShop(){
+  var done=shop.filter(function(s){return s.done;}).length;
+  document.getElementById('cmp-cnt').textContent=done+'/'+shop.length+' itens marcados';
+  var el=document.getElementById('shop-list');
+  if(!shop.length){
+    el.innerHTML='<div class="empty"><span class="empty-ico">&#128722;</span><h4>Lista vazia</h4><p>Adicione ingredientes das receitas</p></div>';
+    return;
+  }
+  var grp={};
+  shop.forEach(function(s,i){var k=s.src||'Manual';if(!grp[k])grp[k]=[];grp[k].push({s:s,i:i});});
+  var h='';
+  if(done>0) h+='<button class="clr-btn" onclick="clearDone()">&#128465; Remover marcados</button>';
+  Object.keys(grp).forEach(function(k){
+    h+='<span class="stitle">'+k+'</span>';
+    grp[k].forEach(function(x){
+      h+='<div class="si">'
+        +'<div class="schk'+(x.s.done?' on':'')+'" onclick="togShop('+x.i+')">'+(x.s.done?'&#10003;':'')+'</div>'
+        +'<div class="slbl'+(x.s.done?' on':'')+'">'+x.s.n+'</div>'
+        +'<div class="sdel" onclick="delShop('+x.i+')">&#10005;</div>'
+        +'</div>';
+    });
+  });
+  el.innerHTML=h;
+}
+function addItem(){
+  var v=document.getElementById('add-inp').value.trim();
+  if(!v) return;
+  shop.push({n:v,done:false,src:'Manual'});
+  localStorage.setItem('mShop',JSON.stringify(shop));
+  document.getElementById('add-inp').value='';
+  renderShop();
+}
+function togShop(i){shop[i].done=!shop[i].done;localStorage.setItem('mShop',JSON.stringify(shop));renderShop();}
+function delShop(i){shop.splice(i,1);localStorage.setItem('mShop',JSON.stringify(shop));renderShop();}
+function clearDone(){shop=shop.filter(function(s){return !s.done;});localStorage.setItem('mShop',JSON.stringify(shop));renderShop();toast('Itens removidos!');}
+
+// FAVORITOS
+function renderFavs(){
+  var favR=recipes.filter(function(r){return favs.indexOf(r.id)>=0;});
+  document.getElementById('fav-cnt').textContent=favR.length+' receitas favoritas';
+  if(!favR.length){
+    document.getElementById('fav-list').innerHTML='<div class="fav-empty"><div class="fav-empty-logo"><img src="data:image/jpeg;base64,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" alt=""></div><h4>Nenhum favorito ainda</h4><p>Abra uma receita e toque no coracao para salvar</p></div>';
+    return;
+  }
+  var h='';
+  favR.forEach(function(r){
+    h+='<div class="rc" onclick="openDet('+r.id+')">'
+      +'<div class="rtag">'+(TAG[r.ncat]||r.ncat)+'</div>'
+      +'<div class="rname">'+r.name+'</div>'
+      +'<div class="rmeta">&#129380; '+r.ing.length+' ingredientes <span class="abadge">'+(AGELBL[r.age]||r.age)+'</span></div>'
+      +'<div class="rfav" onclick="event.stopPropagation();togFav('+r.id+')">&#10084;&#65039;</div>'
+      +'</div>';
+  });
+  document.getElementById('fav-list').innerHTML=h;
+}
+
+render();
+renderShop();
+</script>
+</body>
+</html>
