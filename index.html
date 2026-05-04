@@ -435,7 +435,7 @@ var shop    = JSON.parse(localStorage.getItem('mShop')||'[]');
 
 function toast(m){
   var t=document.getElementById('toast');
-  t.textContent=m; t.classList.add('on');
+  t.innerHTML=m; t.classList.add('on');
   setTimeout(function(){t.classList.remove('on');},2000);
 }
 
