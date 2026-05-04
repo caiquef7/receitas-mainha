@@ -509,7 +509,7 @@ function openDet(id){
   document.getElementById('det-cat').textContent=TAG[r.ncat]||r.ncat;
   document.getElementById('det-title').textContent=r.name;
   document.getElementById('det-age').textContent='Idade: '+(AGELBL[r.age]||r.age);
-  document.getElementById('det-fav').textContent=favs.indexOf(id)>=0?'&#10084;&#65039;':'&#129293;';
+  document.getElementById('det-fav').innerHTML=favs.indexOf(id)>=0?'&#10084;&#65039;':'&#129293;';
   var ih='';
   r.ing.forEach(function(ing,j){
     ih+='<div class="ing-item"><div class="idot"></div><span style="flex:1">'+ing+'</span>'
@@ -527,7 +527,7 @@ function closeDet(){document.getElementById('det').classList.remove('on');}
 function toggleFavDet(){
   if(!curId) return;
   togFav(curId);
-  document.getElementById('det-fav').textContent=favs.indexOf(curId)>=0?'&#10084;&#65039;':'&#129293;';
+  document.getElementById('det-fav').innerHTML=favs.indexOf(curId)>=0?'&#10084;&#65039;':'&#129293;';
 }
 function togFav(id){
   var i=favs.indexOf(id);
